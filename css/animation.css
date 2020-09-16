@@ -1,0 +1,34 @@
+@keyframes hinge {
+    20%,60% {
+        transform: rotate(70deg);
+    }
+    40%,80%{
+        transform: rotate(55deg);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
+@keyframes show {
+    60%{
+        transform: translateY(0);
+    }
+    64%,69% {
+        transform: translateY(-10px);
+    }
+    66%{
+        transform: translateY(-8px);
+    }
+    68%{
+        transform: translateY(-12px);
+    }
+    70% {
+        transform: translateY(0);
+        width: 36px;
+    }
+    100% {
+        transform: translateY(0);
+        width: calc(100% - 30px);
+    }
+}

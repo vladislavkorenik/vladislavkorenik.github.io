@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+.screen_black_opacity {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.3;
+  z-index: 10;
+}
+.text_lightgreen_background {
+  padding: 3px;
+  background: lightgreen;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 1px lightgrey;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+.hide {
+  display: none;
+}
+#resumeContainer {
+  transform: translateY(100vh);
+  animation: show 5s ease-in-out 1s forwards;
+}
+#hingeContainer {
+  transform-origin: top left;
+  animation: hinge 2s ease-in-out forwards;
+}
+
+.container {
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.preview-info {
+  z-index: 100;
+  position: absolute;
+  background: white;
+  top: 35%;
+  padding: 5px 15px;
+}
+.preview-info__text {
+  text-align: center;
+  font-size: 25px;
+}
+.preview-info__link {
+  cursor: pointer;
+  text-decoration: underline;
+  transition: 0.8s;
+}
+.preview-info__link:hover {
+  color: lightgreen;
+}
+
+.resume-container {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 100;
+  height: 90vh;
+  max-width: 1024px;
+  background: white;
+  padding: 15px;
+}
