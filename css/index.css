@@ -57,12 +57,11 @@ a:hover , #resume a:hover {
   display: none;
 }
 #resumeContainer {
-  width: 0;
   -webkit-transform: translateY(100vh);
   -ms-transform: translateY(100vh);
   transform: translateY(100vh);
-  -webkit-animation: show 5s ease-in-out 1s forwards;
-  animation: show 5s ease-in-out 1s forwards;
+  -webkit-animation: show 4.5s ease-in-out forwards;
+  animation: show 4.5s ease-in-out forwards;
 }
 #hingeContainer {
   -webkit-transform-origin: top left;
@@ -115,6 +114,7 @@ a:hover , #resume a:hover {
   overflow-y: auto;
   height: 90vh;
   max-width: 1024px;
+  width: calc(100% - 30px);
   background: white;
   padding: 15px;
 }
