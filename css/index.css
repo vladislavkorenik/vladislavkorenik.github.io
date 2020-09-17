@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -11,6 +11,15 @@ body {
   overflow: hidden;
   height: 100vh;
   position: relative;
+}
+a {
+  cursor: pointer;
+  -webkit-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s;
+}
+a:hover , #resume a:hover {
+  color: lightgreen;
 }
 .text_lightgreen_background {
   padding: 3px;
@@ -50,19 +59,19 @@ body {
 #resumeContainer {
   width: 0;
   -webkit-transform: translateY(100vh);
-      -ms-transform: translateY(100vh);
-          transform: translateY(100vh);
+  -ms-transform: translateY(100vh);
+  transform: translateY(100vh);
   -webkit-animation: show 5s ease-in-out 1s forwards;
-          animation: show 5s ease-in-out 1s forwards;
+  animation: show 5s ease-in-out 1s forwards;
 }
 #hingeContainer {
   -webkit-transform-origin: top left;
-      -ms-transform-origin: top left;
-          transform-origin: top left;
+  -ms-transform-origin: top left;
+  transform-origin: top left;
   -webkit-animation: hinge 2s ease-in-out forwards;
-          animation: hinge 2s ease-in-out forwards;
+  animation: hinge 2s ease-in-out forwards;
 }
-#resume {
+#resume, #resume a {
   color: rgb(51, 51, 51);
 }
 
@@ -73,11 +82,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 .preview-info {
   position: absolute;
@@ -89,20 +98,18 @@ body {
   text-align: center;
   font-size: 25px;
 }
-.preview-info__link {
-  cursor: pointer;
+.preview-info__link,
+.resume-download__link {
   text-decoration: underline;
-  -webkit-transition: 0.8s;
-  -o-transition: 0.8s;
-  transition: 0.8s;
 }
-.preview-info__link:hover {
-  color: lightgreen;
+.resume-download {
+  margin-top: 20px;
+  text-align: center;
 }
 
 .resume-container {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   position: absolute;
   overflow-x: hidden;
   overflow-y: auto;
