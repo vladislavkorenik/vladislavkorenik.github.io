@@ -46,10 +46,11 @@ body {
 .hide {
   display: none;
 }
-/*#resumeContainer {
+#resumeContainer {
+  width: 0;
   transform: translateY(100vh);
   animation: show 5s ease-in-out 1s forwards;
-}*/
+}
 #hingeContainer {
   transform-origin: top left;
   animation: hinge 2s ease-in-out forwards;
