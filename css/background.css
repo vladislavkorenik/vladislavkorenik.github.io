@@ -18,20 +18,35 @@
   height: 5vh;
   width: 100%;
   top: -50%;
+  background: -webkit-gradient(
+    linear,
+    left top, left bottom,
+    from(rgba(255, 255, 255, 0)),
+    color-stop(75%, #ffffff),
+    to(#ffffff)
+  );
+  background: -o-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0) 0%,
+    #ffffff 75%,
+    #ffffff 100%
+  );
   background: linear-gradient(
     to bottom,
     rgba(255, 255, 255, 0) 0%,
     #ffffff 75%,
     #ffffff 100%
   );
-  animation: fall 6.5s cubic-bezier(0.4, 0.26, 0, 0.97) forwards infinite;
+  -webkit-animation: fall 6.5s cubic-bezier(0.4, 0.26, 0, 0.97) forwards infinite;
+          animation: fall 6.5s cubic-bezier(0.4, 0.26, 0, 0.97) forwards infinite;
 }
 
 .line:nth-child(2) {
   left: 10%;
 }
 .line:nth-child(2)::after {
-  animation-delay: 5s;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
 }
 
 .line:nth-child(3) {
@@ -39,7 +54,8 @@
   right: 10%;
 }
 .line:nth-child(3)::after {
-  animation-delay: 3.5s;
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
 }
 
 .line:nth-child(4) {
@@ -47,20 +63,24 @@
   right: 35%;
 }
 .line:nth-child(4)::after {
-  animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 .line:nth-child(5) {
   left: 35%;
 }
 .line:nth-child(5)::after {
-  animation-delay: 6s;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
 }
 
 .line:nth-child(6),
 .line:nth-child(7),
 .line:nth-child(8) {
-  transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+      -ms-transform: rotate(10deg);
+          transform: rotate(10deg);
   top: 25%;
   left: -20%;
   height: 1px;
@@ -71,27 +91,47 @@
 .line:nth-child(8)::after {
   width: 10vw;
   height: 100%;
+  background: -webkit-gradient(
+    linear,
+    left top, right top,
+    from(rgba(255, 255, 255, 0)),
+    color-stop(75%, #ffffff),
+    to(#ffffff)
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0) 0%,
+    #ffffff 75%,
+    #ffffff 100%
+  );
   background: linear-gradient(
     to right,
     rgba(255, 255, 255, 0) 0%,
     #ffffff 75%,
     #ffffff 100%
   );
-  animation: LeftRight 7s cubic-bezier(0.4, 0.26, 0, 0.97) forwards infinite;
+  -webkit-animation: LeftRight 7s cubic-bezier(0.4, 0.26, 0, 0.97) forwards infinite;
+          animation: LeftRight 7s cubic-bezier(0.4, 0.26, 0, 0.97) forwards infinite;
 }
 
 .line:nth-child(7) {
-  transform: rotate(-25deg);
+  -webkit-transform: rotate(-25deg);
+      -ms-transform: rotate(-25deg);
+          transform: rotate(-25deg);
   top: 65%;
 }
 .line:nth-child(7)::after {
-  animation-delay: 3s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
 
 .line:nth-child(8) {
-  transform: rotate(-5deg);
+  -webkit-transform: rotate(-5deg);
+      -ms-transform: rotate(-5deg);
+          transform: rotate(-5deg);
   top: 15%;
 }
 .line:nth-child(8)::after {
-  animation-delay: 5s;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
 }

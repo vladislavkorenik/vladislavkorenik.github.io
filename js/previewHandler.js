@@ -9,5 +9,4 @@ previewLink.onclick = function () {
     resumeContainer.classList.remove("hide");
     resumeContainer.setAttribute("id", "resumeContainer");
   }, 2000);
-
 };
