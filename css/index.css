@@ -20,13 +20,12 @@ a {
 }
 a:hover,
 #resume a:hover {
-  color: darkgreen;
+  color: rgb(60, 185, 60);
 }
 .text_darkgreen_background {
   padding: 3px 5px 3px 3px;
   background: darkgreen;
   color: rgb(255, 255, 255);
-  text-shadow: 1px 1px 1px lightgrey;
 }
 .text_darkgreen_color {
   color: darkgreen;
@@ -128,23 +127,23 @@ a:hover,
   font-size: 31.5px;
 }
 .resume-header p {
-  font-size: 12px;
+  font-size: 14px;
   color: darkgreen;
   font-weight: bold;
 }
 
 .resume-section {
   margin-top: 20px;
-  font-size: 12px;
+  font-size: 14px;
 }
 .resume-section__text-caption,
 .resume-section__link-caption {
   color: rgb(64, 64, 64);
   font-weight: bold;
-  font-size: 13px;
+  font-size: 15px;
 }
 .resume-section__link-caption {
-  font-size: 12px;
+  font-size: 14px;
 }
 .resume-section__list {
   margin: 5px 0 0 15px;
